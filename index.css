@@ -1,0 +1,200 @@
+body {
+  background: gray;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.scheduleAMeeting {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 600;
+  font-family: system-ui;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scheduleAMeeting .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s;
+  background: rgb(174, 174, 174);
+  padding: 5px;
+}
+
+.scheduleAMeeting span {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.scheduleAMeeting:hover .icon {
+  transform: translateX(120px);
+  margin-left: 5px;
+  background: none;
+}
+
+.scheduleAMeeting:hover span {
+  transform: translateX(-45px);
+}
+
+.scheduleAMeeting::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: orangered;
+  transition: width 0.3s;
+  border-radius: 30px;
+}
+
+.scheduleAMeeting:hover::before {
+  width: 100%;
+}
+
+.submitButton {
+  font-family: system-ui;
+  font-weight: 700;
+  min-width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #000;
+  color: orangered;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  text-align: center;
+  position: relative;
+}
+.submitButton .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: gray;
+  margin-left: 5px;
+  transition: opacity 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.submitButton .circle .icon {
+  font-weight: 700;
+  color: #000;
+  font-size: 12px;
+}
+
+.submitButton::before {
+  content: "SUBMIT";
+  margin-left: 30%;
+  transition: margin-left 0.3s ease-in;
+}
+
+.submitButton:hover .circle {
+  display: flex;
+}
+
+.submitButton:hover::before {
+  margin-left: 20%;
+}
+
+.submitButton:active::before {
+  content: "SUBMITTED";
+}
+
+.submitButton:active {
+  background: orangered;
+  color: white;
+  box-shadow: 0 0 2px 1px orangered;
+}
+
+.submitButton:active .circle {
+  background: #fff;
+}
+
+.submitButton:active .icon {
+  color: orangered;
+}
+
+.knowMoreButton {
+  display: flex;
+  padding: 5px 20px;
+  background: transparent;
+  border: none;
+  justify-content: space-between;
+  position: relative;
+  min-width: 135px;
+  align-items: center;
+  cursor: pointer;
+}
+.knowMoreButton .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+.knowMoreButton .circle .icon {
+  position: absolute;
+  right: -8px;
+}
+.knowMoreButton span {
+  font-weight: 700;
+  font-family: system-ui;
+  transition: transform 0.3s;
+  color: orangered;
+  margin-left: 5px;
+}
+
+.knowMoreButton:hover span {
+  transform: translateX(-20px);
+  color: #fff;
+}
+
+.knowMoreButton:hover .circle {
+  transform: translateX(80px);
+  border: none;
+  color: #fff;
+}
+
+.knowMoreButton:hover .icon {
+  margin-top: 5px;
+}
+
+.knowMoreButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: orangered;
+  transition: width 0.3s;
+  border-radius: 30px;
+}
+
+.knowMoreButton:hover::before {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
